@@ -1,4 +1,8 @@
-name: Formatting/Linting
+# This workflow helps ensure that the code of the action we're going to deploy:
+# 1. Is well-formated
+# 2. Is linted
+
+name: Code validation
 
 on:
   workflow_call:
