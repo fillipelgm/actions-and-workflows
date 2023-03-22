@@ -32,7 +32,7 @@ jobs:
     
     - name: Install dependencies
       run: |
-        if [ -n "${{ inputs.requirements_file_path }}" ]
+        if [ "${{ inputs.requirements_file_path }}" != "" ]
         then
           python -m pip install --upgrade pip
           pip install -r ${{ inputs.requirements_file_path }}
@@ -42,7 +42,7 @@ jobs:
     
     - name: Analysing the code with pylint
       run: |
-        if [ -n "${{ inputs.toml_config_file_path }}" ]
+        if [ "${{ inputs.toml_config_file_path }}" != "" ]
         then
           pylint --rcfile ${{ inputs.toml_config_file_path }} $(git ls-files '*.py')
         else
