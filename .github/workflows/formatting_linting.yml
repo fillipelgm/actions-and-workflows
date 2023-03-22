@@ -47,6 +47,7 @@ jobs:
           pylint --rcfile ${{ inputs.toml_config_file_path }} $(git ls-files '*.py')
         else
           pylint $(git ls-files '*.py')
+        fi
 
   run-isort:
     runs-on: ubuntu-latest
