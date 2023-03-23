@@ -1,8 +1,8 @@
-# This workflow helps ensure that the code of the action we're going to deploy:
+# This workflow helps ensure that our code:
 # 1. Is well-formated
 # 2. Is linted
 
-name: Linting
+name: Format & Lint
 
 on:
   workflow_call:
