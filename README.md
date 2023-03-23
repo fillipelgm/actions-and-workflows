@@ -1,2 +1,2 @@
-# actions-and-workflows
+# reusable-workflows
 Repository for my reusable workflows
